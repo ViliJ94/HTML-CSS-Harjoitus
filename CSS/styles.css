@@ -1,11 +1,8 @@
 /* tyyli */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif, Verdana;
   background-color: aliceblue;
-  scroll-behavior: smooth;
-  position: relative;
-  z-index: 0;
 }
 
 .container{
@@ -53,7 +50,7 @@ footer{
 
 .nav a{
     margin-left:24px;
-    color: red;
+    color: darkred;
     text-decoration:none
 }
 .nav a:hover{
@@ -84,11 +81,11 @@ footer{
     border-radius:10px;
     overflow:hidden;
 }
-.intro-image img.resize{
-    width:1200px;
-    height:500px;
-    object-fit:cover;
-    display:block
+.intro-image img{
+    width:1062px;
+    height:597px;
+    object-fit: fill;
+    display:block;
 }
 
 
@@ -106,15 +103,16 @@ footer{
     padding-bottom:20px;
 }
 .products-tyyli-image{
-    max-width:1102px;
+    max-width:100%;
+    max-height:100%;
     margin:0 auto;
     border-radius:10px;
     overflow:hidden;
 }
-.products-tyyli-image img.resize{
-    width:1200px;
-    height:120px;
-    object-fit:cover;
+.products-tyyli-image img{
+    width:1062px;
+    height:597px;
+    object-fit: fill;
     display:block;
 }
 .products-intro{
@@ -131,8 +129,8 @@ footer{
 }
 
 .prod{
-    background:#fff;
-    border:1px solid #e6e6e6;
+    background: wheat;
+    border: black solid;
     padding:20px;
     border-radius:10px;
 }
@@ -140,6 +138,7 @@ footer{
 .prod-image{
     height:296px;
     border-radius:8px;
+    object-fit: fill;
     overflow:hidden;
 }
 
@@ -155,7 +154,7 @@ footer{
 }
 
 .muted{
-    color: slategray;
+    color: darkblue;
     font-size:14px;
     margin-bottom:8px;
 }
@@ -181,14 +180,14 @@ footer{
 .contact-map{
     flex:1;
     display:flex;
-    flex-content:flex-end;
 }
 .contact-image img{
     width:100%;
-    height:360px;
+    height:auto;
     object-fit:cover;
     display:block;
     margin:auto;
-    border-radius:10px:
+    border-radius:10px;
+    flex-wrap: wrap;
 }
 
